@@ -4,8 +4,7 @@ MAINTAINER Jonathan Bunde-Pedersen <jonathan@purebadger.com>
 ENV HUGO_VERSION 0.50
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit
 
-# Install pygments (for syntax highlighting) and bash
-RUN apk update && apk add py-pygments && apk add bash && rm -rf /var/cache/apk/*
+RUN apk update && rm -rf /var/cache/apk/*
 
 # Download and Install hugo
 RUN mkdir /usr/local/hugo
