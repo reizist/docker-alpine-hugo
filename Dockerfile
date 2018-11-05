@@ -4,7 +4,7 @@ MAINTAINER reizist <reizist@gmail.com>
 ENV HUGO_VERSION 0.50
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit
 
-RUN apk update && rm -rf /var/cache/apk/*
+RUN apk update && apk add git && rm -rf /var/cache/apk/*
 
 # Download and Install hugo
 RUN mkdir /usr/local/hugo
