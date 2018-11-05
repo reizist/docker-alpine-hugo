@@ -1,5 +1,5 @@
 FROM alpine:3.7
-MAINTAINER Jonathan Bunde-Pedersen <jonathan@purebadger.com>
+MAINTAINER reizist <reizist@gmail.com>
 
 ENV HUGO_VERSION 0.50
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit
